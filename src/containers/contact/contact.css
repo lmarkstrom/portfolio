@@ -1,0 +1,57 @@
+.mainContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 350px;
+    align-content: center;
+    margin-top: 40px;
+    margin-bottom: 35%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(62, 62, 69);
+    border-radius: 10px 0px 0px 10px;
+}
+.contactFormContainer {
+    display: flex;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 10px 10px 0px;
+}
+h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+p {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+.iconsContainer {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    /* background-color: blue; */
+    align-items: center;
+    justify-content: center;
+}
+.iconBox {
+    height: 30px;
+    margin: 10px;
+    margin-top: 90px;
+    /* background-color: green; */
+}
+.icons {
+    width: 30px;
+    height: auto;
+}
