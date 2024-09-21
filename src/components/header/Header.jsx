@@ -28,7 +28,7 @@ const Header = ({ activeTab, setActiveTab }) => {
     return (
         <div className="header">
             <div className="name">
-                <h1>Linus Markström</h1>
+                <h1>Linus Markström Portfolio</h1>
             </div>
             <div className='tabContainer' ref={tabsRef}>
                 <ul className="tabs">

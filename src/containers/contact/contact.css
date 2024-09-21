@@ -9,8 +9,8 @@
     width: 400px;
     height: 350px;
     align-content: center;
-    margin-top: 40px;
-    margin-bottom: 35%;
+    margin-top: 10%;
+    margin-bottom: 20%;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 .contactInfoContainer {
@@ -41,7 +41,6 @@ p {
     display: flex;
     width: 100%;
     height: 40%;
-    /* background-color: blue; */
     align-items: center;
     justify-content: center;
 }
@@ -49,9 +48,60 @@ p {
     height: 30px;
     margin: 10px;
     margin-top: 90px;
-    /* background-color: green; */
 }
 .icons {
     width: 30px;
     height: auto;
 }
+form {
+    background-color: white;
+    padding: 10px 20px;
+    max-width: 400px;
+    width: 100%;
+  } 
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+  }
+
+  
+  input:focus, textarea:focus {
+    border-color: #007bff; 
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical; 
+    height: 120px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #3b4550; 
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #607183;
+  }
+  
+
+  @media (max-width: 500px) {
+    form {
+      padding: 15px 20px;
+    }
+ } 

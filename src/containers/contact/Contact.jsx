@@ -63,34 +63,32 @@ const Contact = () => {
             </div>
           </div>
           <div className='contactFormContainer'>
-            <input type="text" id="nameInput" placeholder='Full Name'/>
-            <input type="text" id="nameInput" placeholder='Full Name'/>
             <form onSubmit={sendEmail}>
-            <input
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Your message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
-            <button type="submit">Send Message</button>
-          </form>
+              <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Send Message</button>
+            </form>
           </div>
         </div>
     </div>
