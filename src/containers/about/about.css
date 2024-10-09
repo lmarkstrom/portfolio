@@ -12,13 +12,17 @@ body {
     animation: bounce 2s infinite;
 }
 
+.top {
+    margin-bottom: 20px;
+}
+
 .arrow {
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 40px solid rgb(255, 255, 255); 
-    margin-bottom: 10px; 
+    margin: 10px 0; 
 }
 
 .scroll-arrow p {
@@ -37,6 +41,7 @@ body {
     align-items: center;
     margin-bottom: 50px;
     margin-top: 20px;
+    padding: 0;
 }
 
 .flex-item {

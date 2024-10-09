@@ -4,10 +4,9 @@
     display: flex;
     justify-content: space-between;
     height: 60px;
-    /* box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); */
   }
 
-  .name h1 {
+  h1 {
     color: rgb(255, 255, 255);
     font-size: 2rem;
     margin: 0;
@@ -25,7 +24,7 @@
   .tabContainer {
     display: flex;
     align-items: center;
-    position: relative; /* Add this line */
+    position: relative; 
 }
 
   .tabs {
@@ -57,3 +56,18 @@
   li {
   color: rgb(255, 255, 255);
   }
+
+@media (width < 870px) {
+    h1 {
+      font-size: 1.5rem;
+      max-width: 90%; 
+      margin: 0 auto;
+    }
+}
+@media (width < 755px) {
+  h1 {
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+} 

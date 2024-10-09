@@ -23,7 +23,6 @@
 .contactFormContainer {
     display: flex;
     width: 50%;
-    background-color: rgb(255, 255, 255);
     border-radius: 0px 10px 10px 0px;
 }
 h2 {
@@ -55,7 +54,7 @@ p {
     height: auto;
 }
 form {
-    background-color: white;
+    background-color: rgb(62, 62, 69);
     padding: 10px 20px;
     max-width: 400px;
     width: 100%;
