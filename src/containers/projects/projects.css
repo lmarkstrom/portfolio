@@ -1,0 +1,38 @@
+.clickable-header {
+    cursor: pointer;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.clickable-header:hover {
+    color: #eceef0; 
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.box-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box-image img {
+    margin: 20px;
+}
+
+.picture {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+}
+
+.picture:hover {
+    transform: scale(1.05); 
+}

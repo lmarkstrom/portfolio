@@ -2,6 +2,31 @@ body {
     z-index: -1;
 }
 
+.scroll-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid rgb(255, 255, 255); 
+    margin-bottom: 10px; 
+}
+
+.scroll-arrow p {
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-weight: bold;
+}
 
 
 .aboutContainer {   
@@ -15,11 +40,13 @@ body {
 }
 
 .flex-item {
+    opacity: 0; 
     margin-top: 25px;
     margin-bottom: 80px;
     display: flex;
     max-width: 600px;
     min-width: 360px;
+    transition: opacity 0.6s ease-out;
 }
 
 .textP{
@@ -27,7 +54,9 @@ body {
 }
 
 .pictureContainer {
+    display: flex;
     margin: 10px;
+    justify-content: center;
 }
 .textcontainer {
     margin-top: 0px;
@@ -60,7 +89,20 @@ body {
     opacity: 0;
     animation: fadeIn 1s forwards;
 }
+.flex-item.fade-in {
+    opacity: 1;
+}
 
 .hidden {
+    display: block; 
     opacity: 0;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
 }

@@ -47,7 +47,7 @@ const Contact = () => {
     <div className='mainContainer'>
         <div className='contactContainer'>
           <div className='contactInfoContainer'>
-            <h2>Contact Information</h2>
+            <h2 id="contactHead">Contact</h2>
             <p>
               Email: lmark@kth.se 
               <br />
