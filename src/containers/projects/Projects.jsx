@@ -11,6 +11,12 @@ import dyn2 from '../../assets/pictures/dyn2.png';
 import dyn3 from '../../assets/pictures/dyn3.png';
 import dyn4 from '../../assets/pictures/dyn4.png';
 import dyn5 from '../../assets/pictures/dyn5.png';
+
+import prog1 from '../../assets/pictures/prog1.png';
+import prog2 from '../../assets/pictures/prog2.png';
+import prog3 from '../../assets/pictures/prog3.png';
+import prog4 from '../../assets/pictures/prog4.png';
+import prog5 from '../../assets/pictures/prog5.png';
 import './projects.css';
 
 
@@ -94,6 +100,32 @@ const Projects = () => {
                 <img className='picture' src={dyn3} alt="dyn 3" />
                 <img className='picture' src={dyn5} alt="dyn 5" />
                 <img className='picture' src={dyn4} alt="dyn 4" />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+      <div className='flex-item notHidden'>
+        <div className='textcontainer'>
+          <h2 onClick={() => toggleExpansion(3)} className="clickable-header">
+            Shopping List {expandedProjects[3] ? '▲' : '▼'}
+          </h2>
+          <h3>Web app with database, user sessions and hashed password system in PHP</h3>
+          <h4>06/2024 | Own project part of a school assignment</h4>
+          {expandedProjects[3] && (
+            <div className="image-container">
+              <p>
+                Own project made as part of a course KTH. The project is a web app where you can create a shopping but also get
+                a recomende shopping list based on your previous shopping lists. You can modify the recomended list and finish it 
+                as an final list, where you can change for similar products. The user can also update the modify the database of products
+                and also create a new user. 
+              </p>
+              <div className="box-image">
+                <img className='picture' src={prog1} alt="prog 1" />
+                <img className='picture' src={prog2} alt="prog 2" />
+                <img className='picture' src={prog3} alt="prog 3" />
+                <img className='picture' src={prog5} alt="prog 5" />
+                <img className='picture' src={prog4} alt="prog 4" />
               </div>
             </div>
           )}
