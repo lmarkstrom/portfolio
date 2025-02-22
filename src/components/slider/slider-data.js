@@ -7,7 +7,7 @@ export const sliderData = [
     {
         image: "/src/assets/slide_img/img2.jpg",
         title: "My interests",
-        description: "I have a great interest in programming, development, problem solvning and all those nerdy things. Biside all that I also like to hike, workout and play sports of all kinds."
+        description: "I have a interest in programming, development, problem solvning and all those nerdy things. Biside all that I also like to hike, workout and play sportss."
     },
     {
         image: "/src/assets/slide_img/img3.jpg",

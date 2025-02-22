@@ -41,10 +41,10 @@
     top: 30rem;
     left: 7rem;
     opacity: 0;
-    width: 50%;
+    width: 60%;
     color: #fff;
     padding: 3rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     animation: slide-up 1s ease 0.5s;
     /* animation-delay: 1s; */
     animation-fill-mode: forwards;
