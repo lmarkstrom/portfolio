@@ -17,10 +17,9 @@ const Navbar = () => {
             
             <div className={isOpen ? "nav-links active" : "nav-links"}>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" onClick={() => setIsOpen(!isOpen)}>Home</a></li>
+                    <li><a href="#/projects" onClick={() => setIsOpen(!isOpen)}>Projects</a></li>
+                    <li><a href="#/contact" onClick={() => setIsOpen(!isOpen)}>Contact</a></li>
                 </ul>
             </div>
         </div>

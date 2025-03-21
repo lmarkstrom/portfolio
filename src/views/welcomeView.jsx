@@ -4,6 +4,11 @@ import { AiOutlineFundProjectionScreen, AiOutlineContacts, AiOutlineAudit } from
 
 export function WelcomeView(props){
     const slides = [];
+    
+    const goToProject = (project) => {
+        navigate(`/projects#${project}`);
+    };
+
     return (
         <div className="welcome-view">
             <div className="top-content">
@@ -11,11 +16,11 @@ export function WelcomeView(props){
                 <div>
                     <div>
                         <h1>
-                            Computer Science student at KTH
+                            Hi, I am Linus
                         </h1>
                         <p>
-                            I am a student at KTH Royal Institute of Technology in Stockholm, Sweden. 
-                            I am currently studying Computer Science and Engineering and I am in my third year.
+                            I am a third student at KTH Royal Institute of Technology in Stockholm, 
+                            pursuing Computer Science and Engineering and I am in my third year.
                         </p>
                     </div>
                     <hr />
@@ -58,19 +63,26 @@ export function WelcomeView(props){
                 </a>
             </div>
             <div className="bottom-content">
-                <div>
+                <div onClick={moveToProjects}>
                     <AiOutlineFundProjectionScreen className="shortcut-icon" />
                     <h2>Projects</h2>
                 </div>
-                <div>
+                <div onClick={moveToContact}>
                     <AiOutlineContacts className="shortcut-icon" />
-                    <h2>Stay connected</h2>
+                    <h2>Connect</h2>
                 </div>
-                <div>
+                {/* <div>
                     <AiOutlineAudit className="shortcut-icon" />
                     <h2>Resume</h2>
-                </div>
+                </div> */}
             </div>
         </div>
     );
+
+    function moveToProjects(){
+        window.location = "#/projects";
+    }
+    function moveToContact(){
+        window.location = "#/contact";
+    }
 }

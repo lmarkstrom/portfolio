@@ -1,18 +1,33 @@
 export const sliderData = [
     {
-        image: "/src/assets/slide_img/img1.jpg",
-        title: "Linus Markström",
-        description: "Welcome to my portfolio page, here you can find my previus projects, learn more about me and much more."
+        image: "/src/assets/slide_img/kex.png",
+        title: "Image recognition neural networks and Adversarial attacks",
+        description: "Bachelor thesis project with focus on Cyber Security and Computer Science.",
+        button: ""
     },
     {
-        image: "/src/assets/slide_img/img2.jpg",
-        title: "My interests",
-        description: "I have a interest in programming, development, problem solvning and all those nerdy things. Biside all that I also like to hike, workout and play sportss."
+        image: "/src/assets/slide_img/moviegram.png",
+        title: "Social media web-app",
+        description: "Web-app using React, JS nad Firebase",
+        button: ""
     },
     {
-        image: "/src/assets/slide_img/img3.jpg",
-        title: "Military background",
-        description: "I have a three year long military background, where I served as a system engineer squad leader in the Swedish navy."
+        image: "/src/assets/slide_img/ywh.svg",
+        title: "Geodata webb-app",
+        description: "Web-app using several Google API´s and SQLite",
+        button: ""
+    },
+    {
+        image: "/src/assets/slide_img/game1.png",
+        title: "2D Java game-engine",
+        description: "2D-gamae engine from scratch in Java",
+        button: ""
+    },
+    {
+        image: "/src/assets/slide_img/db1.png",
+        title: "Ingridient database",
+        description: "Database web-app using PHP and SQLite",
+        button: ""
     },
     // {
     //     image: "/src/assets/slide_img/img4.jpg",
