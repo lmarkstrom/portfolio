@@ -6,13 +6,14 @@ body {
 
 .navbar {
     display: flex;
+    flex: 0 0 20%;
     justify-content: flex-end;
     color: rgb(255, 255, 255);
     height: 40px;
     z-index: 500;
     position: fixed;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .menu-icon {

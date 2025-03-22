@@ -4,7 +4,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from "react
 export function ContactView() {
     return (
         <div className="contact-container">
-            <h1 className="title">Contact Me</h1>
+            <h1 className="contact-title">Contact Me</h1>
             <p className="contact-description">
                 Feel free to reach out via email, phone, or connect with me on social media.
             </p>

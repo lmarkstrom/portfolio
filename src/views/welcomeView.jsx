@@ -83,10 +83,10 @@ export function WelcomeView(props){
             <div className="icon-field">
                 <span className="social-text">Check out my links: </span>
                 <a href="https://se.linkedin.com/in/linusmarkstrom">
-                    <img src="portfolio/images/linkedin.png" alt="linkedin" />
+                    <img src="/portfolio/images/linkedin.png" alt="linkedin" />
                 </a>
                 <a href="https://github.com/lmarkstrom">
-                    <img src="portfolio/images/github.png" alt="github" />
+                    <img src="/portfolio/images/github.png" alt="github" />
                 </a>
             </div>
             <div className="bottom-content">

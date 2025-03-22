@@ -26,7 +26,7 @@ export function ProjectsView(props){
 
     return (
         <div className="projects-container">
-            <h1 className="title">My Projects</h1>
+            <h1 className="project-title">My Projects</h1>
             <div className="projects-list">
                 {projects.map((project) => (
                     <div
