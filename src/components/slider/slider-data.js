@@ -1,8 +1,8 @@
 export const sliderData = [
     {
         image: "/src/assets/slide_img/kex.png",
-        title: "Image recognition neural networks and Adversarial attacks",
-        description: "Bachelor thesis project with focus on Cyber Security and Computer Science.",
+        title: "Image recognition and Adversarial attacks",
+        description: "Bachelor thesis with focus on Cyber Security and Computer Science.",
         button: ""
     },
     {
@@ -23,12 +23,12 @@ export const sliderData = [
         description: "2D-gamae engine from scratch in Java",
         button: ""
     },
-    {
-        image: "/src/assets/slide_img/db1.png",
-        title: "Ingridient database",
-        description: "Database web-app using PHP and SQLite",
-        button: ""
-    },
+    // {
+    //     image: "/src/assets/slide_img/db1.png",
+    //     title: "Ingridient database",
+    //     description: "Database web-app using PHP and SQLite",
+    //     button: ""
+    // },
     // {
     //     image: "/src/assets/slide_img/img4.jpg",
     //     title: "Title 4",

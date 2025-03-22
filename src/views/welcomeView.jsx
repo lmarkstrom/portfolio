@@ -12,8 +12,11 @@ export function WelcomeView(props){
     return (
         <div className="welcome-view">
             <div className="top-content">
-                <Slider slides={slides}/>
-                <div>
+                <div className="slider-frame">
+                    <Slider  slides={slides}/>
+                </div>
+                
+                <div className="details">
                     <div>
                         <h1>
                             Hi, I am Linus
@@ -24,32 +27,56 @@ export function WelcomeView(props){
                         </p>
                     </div>
                     <hr />
-                    <div>
+                    <div >
                         <h1>
                             Software Developer
                         </h1>
                         <p>
                             I have experince in multiple programming languages, for instance:
                         </p>
-                        <ul>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>C</li>
-                            <li>C#</li>
-                            <li>Haskell</li>
-                            <li>Go</li>
-                            <li>JavaScript</li>
-                        </ul>
+                        <div className="list-container">
+                            <div>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>C</li>
+                                    <li>C#</li>
+                                    <li>Haskell</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Assembly</li>
+                                    <li>SQL</li>
+                                    <li>Go</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
                         <p>
                             I also have experince in multiple frameworks and libraries, for instance:
                         </p>
-                        <ul>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>Next.js</li>
-                            <li>Git</li>
-                            <li>.NET</li>
-                        </ul>
+                        <div className="list-container">
+                            <div>
+                                <ul>
+                                    <li>React</li>
+                                    <li>Vue</li>
+                                    <li>Node.js</li>
+                                    <li>Next.js</li>
+                                    <li>Git</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>.NET</li>
+                                    <li>AWS</li>
+                                    <li>Google Cloud</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

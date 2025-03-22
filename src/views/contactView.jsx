@@ -12,24 +12,24 @@ export function ContactView() {
             <div className="contact-info">
                 <div className="contact-item">
                     <FaEnvelope className="contact-icon" />
-                    <p>Email: <a href="mailto:linusmarkstrom@icloud.com">linusmarkstrom@icloud.com</a></p>
+                    <p><a href="mailto:linusmarkstrom@icloud.com">linusmarkstrom@icloud.com</a></p>
                 </div>
 
                 <div className="contact-item">
                     <FaPhone className="contact-icon" />
-                    <p>Phone: <a href="tel:+46705177278">+46(70) 517 72 78</a></p>
+                    <p><a href="tel:+46705177278">+46(70) 517 72 78</a></p>
                 </div>
 
                 <div className="contact-item">
                     <FaMapMarkerAlt className="contact-icon" />
-                    <p>Location: Stockholm, Sweden</p>
+                    <p>Stockholm, Sweden</p>
                 </div>
 
                 <div className="social-links">
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <a href="https://se.linkedin.com/in/linusmarkstrom" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="social-icon" />
                     </a>
-                    <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/lmarkstrom" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="social-icon" />
                     </a>
                 </div>
