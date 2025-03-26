@@ -23,7 +23,8 @@ export function WelcomeView(props){
                         </h1>
                         <p>
                             I am a third student at KTH Royal Institute of Technology in Stockholm, 
-                            pursuing Computer Science and Engineering and I am in my third year.
+                            pursuing Computer Science and Engineering and beginning my masters this 
+                            autumn.
                         </p>
                     </div>
                     <hr />
