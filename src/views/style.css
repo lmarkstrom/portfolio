@@ -67,6 +67,7 @@
   display: flex;
   flex-direction: row;
   gap: 60px;
+  margin: 0 10%;
 }
 hr {
   height: 2px;
@@ -217,7 +218,7 @@ a {
   margin: 15px 30px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .title {
     font-size: 1.6em;
   }
