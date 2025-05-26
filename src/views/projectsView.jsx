@@ -13,7 +13,7 @@ export function ProjectsView(props){
         project2: useRef(null),
         project3: useRef(null),
         project4: useRef(null),
-        // project5: useRef(null),
+        project5: useRef(null),
     };
 
     useEffect(() => {
@@ -38,6 +38,18 @@ export function ProjectsView(props){
                         <div className="project-info">
                             <h2>{project.title}</h2>
                             <p>{project.description}</p>
+                        </div>
+                        <div className="project-links">
+                            {project.github && (
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                                GitHub
+                            </a>
+                            )}
+                            {project.deploy && (
+                                <a href={project.deploy} target="_blank" rel="noopener noreferrer" className="project-link">
+                                    Deplyment
+                                </a>
+                            )}
                         </div>
                     </div>
                 ))}

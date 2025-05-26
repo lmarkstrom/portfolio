@@ -65,15 +65,27 @@ export function WelcomeView(props){
                                     <li>Vue</li>
                                     <li>Node.js</li>
                                     <li>Next.js</li>
-                                    <li>Git</li>
+                                    <li>Redux</li>
+                                    <li>Express</li>
                                 </ul>
                             </div>
                             <div>
                                 <ul>
+                                    <li>Git</li>
                                     <li>.NET</li>
                                     <li>AWS</li>
                                     <li>Google Cloud</li>
                                     <li>Firebase</li>
+                                    <li>Linux</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Java Swing</li>
+                                    <li>SDL2</li>
+                                    <li>Haskell cursor</li>
+                                    <li>pyTorch</li>
+                                    <li>SNNTorch</li>
                                 </ul>
                             </div>
                         </div>

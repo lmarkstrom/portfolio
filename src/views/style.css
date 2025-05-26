@@ -131,9 +131,9 @@ ul {
   transition: transform 0.2s ease-in-out;
 }
 
-.project-card:hover {
+/* .project-card:hover {
   transform: scale(1.02);
-}
+} */
 
 .project-image {
   width: 200px;
@@ -146,6 +146,16 @@ ul {
   flex: 1;
 }
 
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
 
 
 /* CONTACT */
