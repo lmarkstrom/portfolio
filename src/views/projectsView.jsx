@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import { projectData } from "./data/project-data.js";
+import { projectData } from "../data/project-data";
 import "./style.css";
 
 export function ProjectsView(props){
