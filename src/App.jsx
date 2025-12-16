@@ -1,37 +1,25 @@
-import { Bar } from "/src/presenters/barPresenter.jsx";
-import { Welcome } from "/src/presenters/welcomePresenter.jsx";
-import { Projects } from "/src/presenters/projectsPresenter.jsx";
-import { Contact } from "/src/presenters/contactPresenter.jsx";
+import { Header } from "/src/components/Header.jsx";
+import { WelcomePage } from "/src/pages/WelcomePage.jsx";
+import { ProjectsPage } from "/src/pages/ProjectsPages.jsx";
+import { ContactPage } from "/src/pages/ContactPages.jsx";
 import "./style.css";
 import { observer } from "mobx-react-lite";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { MAIN_PATH } from "./constants/constants.ts";
 
-const App = observer(
-  function AppRender() {
-    return (
+const App = observer(function AppRender() {
+  return (
+    <Router>
       <div>
-        <Bar/>
-        <RouterProvider router={makeRouter()}/>
+        <Header />
+        <Routes>
+          <Route path={MAIN_PATH + "/"} element={<WelcomePage />} />
+          <Route path={MAIN_PATH + "/projects"} element={<ProjectsPage />} />
+          <Route path={MAIN_PATH + "/contact"} element={<ContactPage />} />
+        </Routes>
       </div>
-    );
-  }
-);
-
-function makeRouter(){
-  return createHashRouter([
-      {
-          path: "/",
-          element: <Welcome />,
-      },
-      {
-          path: "/projects",
-          element: <Projects />,
-      },
-      {
-          path: "/contact",
-          element: <Contact />,
-      }
-  ]);
-}
+    </Router>
+  );
+});
 
 export { App };
