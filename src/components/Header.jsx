@@ -15,6 +15,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { MAIN_PATH } from '../constants/constants';
+import { Link } from 'react-router-dom';
 
 const navItems = [
   { label: 'Home', path: MAIN_PATH + '/' },
@@ -24,7 +25,7 @@ const navItems = [
 
 export const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const title = "Linus Markström";
+  const title = "Linus M.";
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -36,7 +37,7 @@ export const Header = () => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
-            <ListItemButton component="a" href={item.path} sx={{ textAlign: 'center' }}>
+            <ListItemButton component={Link} to={item.path} sx={{ textAlign: 'center' }}>
               <ListItemText primary={item.label} />
             </ListItemButton>
           </ListItem>
@@ -63,8 +64,9 @@ export const Header = () => {
           <Box sx={{ display: { xs: 'none', md: 'block' } }}>
             {navItems.map((item) => (
               <Button 
-                key={item.label} 
-                href={item.path}
+                key={item.label}
+                component={Link}
+                to={item.path}
                 sx={{ color: '#000', fontWeight: 600, mx: 1, '&:hover': { color: 'primary.main' } }}
               >
                 {item.label}

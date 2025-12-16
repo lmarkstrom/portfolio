@@ -13,6 +13,8 @@ import {
 import { AiOutlineContacts } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+// 1. IMPORT Link FROM REACT ROUTER
+import { Link } from 'react-router-dom';
 import { MAIN_PATH } from '../constants/constants.js';
 
 const languages = ["Java", "Python", "C/C++", "C#", "Matlab", "Rust", "Prolog", "Haskell", "Assembly", "SQL", "PSQL", "MySQL", "SQLite", "Go", "JavaScript", "TypeScript", "HTML", "CSS"];
@@ -54,11 +56,11 @@ export function WelcomePage(props) {
                                 fontWeight: 800, 
                                 mb: 2, 
                                 color: '#1a1a1a',
-                                fontSize: { xs: '3rem', lg: '4.5rem'}, // Bigger, bolder text
+                                fontSize: { xs: '3rem', lg: '4.5rem'}, 
                                 lineHeight: 1.1
                             }}
                         >
-                            Hi, 
+                            Hi, I am Linus.
                         </Typography>
                         
                         <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.2rem', lineHeight: 1.8, mb: 4, maxWidth: '600px' }}>
@@ -67,10 +69,13 @@ export function WelcomePage(props) {
                         </Typography>
 
                         <Stack direction="row" spacing={2} sx={{ mb: 5 }}>
+                            {/* 2. UPDATE PROJECTS BUTTON */}
                             <Button 
                                 variant="contained" 
                                 size="large" 
-                                href={MAIN_PATH + "/projects"}
+                                // use component={Link} instead of href
+                                component={Link}
+                                to={MAIN_PATH + "/projects"}
                                 endIcon={<ArrowForwardIcon />}
                                 sx={{ 
                                     borderRadius: 2, 
@@ -82,10 +87,13 @@ export function WelcomePage(props) {
                             >
                                 Projects
                             </Button>
+
+                            {/* 3. UPDATE CONNECT BUTTON */}
                             <Button 
                                 variant="outlined" 
                                 size="large"
-                                href={MAIN_PATH + "/contact"}
+                                component={Link}
+                                to={MAIN_PATH + "/contact"}
                                 startIcon={<AiOutlineContacts />}
                                 sx={{ borderRadius: 2, px: 4, py: 1.5, fontSize: '1rem' }}
                             >
