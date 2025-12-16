@@ -4,6 +4,7 @@ import moviegram2 from "../assets/moviegram-2.png";
 import ywh from "../assets/ywh.svg";
 import game1 from "../assets/game1.png";
 import onlineChess from "../assets/online-chess.png";
+import portfolio from "../assets/portfolio.png";
 
 export const projectData = [
     {
@@ -52,5 +53,15 @@ export const projectData = [
         shortDescription: "Chess app with engine and lobby",
         image: onlineChess,
         github: "https://github.com/lmarkstrom/online-chess"
+    },
+    {
+        id: "6",
+        type: "project",
+        title: "Portfolio website",
+        description: "A portfolio website built with React and Material UI. The website showcases my projects, skills and experience. It also includes a contact form and links to my social media profiles so .",
+        shortDescription: "React and Material UI portfolio",
+        image: portfolio,
+        github: "https://github.com/lmarkstrom/portfolio",
+        deploy: "https://lmarkstrom.github.io/portfolio/"
     }
 ];
