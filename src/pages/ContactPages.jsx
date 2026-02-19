@@ -17,8 +17,8 @@ export function ContactPage() {
         {
             icon: <FaEnvelope />,
             title: "Email",
-            value: "linusmarkstrom@icloud.com",
-            link: "mailto:linusmarkstrom@icloud.com",
+            value: "linus@markstrom.dev",
+            link: "mailto:linus@markstrom.dev",
             color: "#e63946" 
         },
         {
